@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+<style>
+select{
+outline:none;
+font-size:50px;
+border:4px solid brown;
+background-color: aqua;
+font-family:georgia;
+font-weight:800;
+border-radius:26px;
+color:red;
+}
+#clr{
+outline:none;
+font-size:35px;
+border:3px solid green;
+background-color: red;
+font-family:georgia;
+font-weight:800;
+border-radius:26px;
+color:white;
+}
+h2{
+font-size:55px;
+font-family:georgia;
+font-weight:800;
+color:blue;
+}
+</style>
+</head>
+<body align="center">
+
+<br><br><br><br>
+<form>
+<select Id="name" onchange="Name()">
+<option value="">&nbsp;&nbsp; FRIENDS &nbsp; NAME &nbsp;&nbsp;</option>
+<option value="sneha"> &nbsp;&nbsp; Sneha </option>
+<option value="kalpana"> &nbsp;&nbsp; Kalpana </option>
+<option value="shivani"> &nbsp;&nbsp; Shivani </option>
+<option value="dhanshree"> &nbsp;&nbsp; Dhanshree </option>
+<option value="vishal"> &nbsp;&nbsp; Vishal </option>
+<option value="tushar"> &nbsp;&nbsp; Tushar </option>
+<option value="sudhanshu"> &nbsp;&nbsp; Sudhanshu </option>
+
+</select>
+
+<br><br><br>
+<input type="button" Id="clr" value="CLEAR" onclick="Clr()">
+</form>
+<br><br>
+<h2 Id="print"></h2>
+
+<script>
+function Name(){
+switch (document.getElementById("name").value){
+case"sneha":
+document.getElementById("print").innerHTML=" Vishal or Sudhanshu kya khaate hai height badhane ke liye !!";
+break;
+
+case"dhanshree":
+document.getElementById("print").innerHTML=" Mujhe gaav jana hai !!";
+break;
+
+case"shivani":
+document.getElementById("print").innerHTML=" Oyeee Oyeee !! ";
+break;
+
+case"kalpana":
+document.getElementById("print").innerHTML=" Mere pass Question Bank main usme se question puchti hu !! ";
+break;
+
+case"tushar":
+document.getElementById("print").innerHTML=" Mujhe russia ukraine ke fight mei bhejdo main apne peace se sab shant kardunga !! ";
+break;
+
+case"vishal":
+document.getElementById("print").innerHTML=" Yaar mujhe complan kaa advertise karne kab milega !! ";
+break;
+
+case"sudhanshu":
+document.getElementById("print").innerHTML=" Maine yeh software banaya hai main apni buraaiii kyu karu !! ";
+break;
+
+default:
+document.getElementById("print").innerHTML="";
+
+}
+}
+
+function Clr(){
+document.getElementById("name").value="";
+document.getElementById("print").innerHTML="";
+}
+</script>
+
+
+
+</body>
+</html>
